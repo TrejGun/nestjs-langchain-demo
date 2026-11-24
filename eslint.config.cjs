@@ -5,7 +5,9 @@ module.exports = [
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
   {
-    ignores: ['**/dist'],
+    // build and test output: `typecheck` emits .d.ts into out-tsc,
+    // jest writes coverage into test-output
+    ignores: ['**/dist', '**/out-tsc', '**/test-output', '**/coverage'],
   },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
