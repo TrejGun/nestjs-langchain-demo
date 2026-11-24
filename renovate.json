@@ -1,7 +1,4 @@
 {
   "extends": ["github>trejgun/renovate-config"],
-  "baseBranches": ["master"],
-  "constraints": {
-    "npm": "<12"
-  }
+  "baseBranches": ["master"]
 }
